@@ -1,7 +1,36 @@
 # **17.** Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the
 # number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz. This is a classic interview-style question, where there are multiple ways to solve it. See how you go!
 
+# (1..100).each do |x|
+#     if x % 3 == 0 && x % 5 == 0
+#         print "fizzbuzz"
+#     elsif x % 5 == 0
+#         print "buzz"
+#     elsif x % 3 == 0
+#         print "fizz"
+#     else
+#         print x
+#     end
+#     print ' '
+# end
+
 # **18.** Use a method (or class if you're feeling like a bit of an expert), to create a scissors-paper-rock (SPR) game. The method (or class) will prompt the user for their selection ("scissors", "paper", "rock"), then will randomly select the computers choice, and will print out the result based on the rules of SPR. 
+
+def spr 
+    play = true
+    while play
+        puts "1. Scissors"
+        puts "2. Paper"
+        puts "3. Rock"
+        input = gets.strip.to_i
+
+        if input > 0 && input < 4
+            bot = Math.rand()
+        end
+    end
+end
+
+
 
 # ```
 # *E.g. User selects "scissors", random computer selection spits out "rock", print "Computer wins with rock!"
